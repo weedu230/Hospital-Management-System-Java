@@ -47,27 +47,6 @@ A **Java Swing-based desktop application** to manage hospital operations includi
 
 
 
-## 📂 Folder Structure (optional)
-HospitalManagementSystem/
-│
-├── src/
-│   ├── hospital/
-│   │   ├── LoginPage.java          # Admin login screen
-│   │   └── Doctors/               # Doctor-related operations
-│   │       ├── addDoctor.java      # Add new doctor
-│   │       ├── editDoctor.java     # Edit doctor details
-│   │       └── ...                 # More doctor modules
-│   │
-│   │   └── Patients/               # Patient-related operations
-│   │       ├── admitPatient.java    # Admit a new patient
-│   │       ├── dischargePatient.java # Discharge patient logic
-│   │       └── ...                 # More patient modules
-│   │
-│   └── ...                         # Additional utility classes
-│
-├── lib/                            # External libraries/dependencies
-├── hms.sql                         # MySQL database schema
-└── README.md                       # Project documentation
 
 
 
