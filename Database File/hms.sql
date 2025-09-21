@@ -6,8 +6,11 @@
 -- Generation Time: Oct 21, 2020 at 10:25 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
+-- Database: `hms`
+-- Port: 3306
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -28,9 +31,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `doctor_record` (
-  `id` varchar(200) NOT NULL,
-  `DoctorName` text NOT NULL,
-  `Specialization` text NOT NULL
+  `id` VARCHAR(200) NOT NULL,
+  `DoctorName` TEXT NOT NULL,
+  `Specialization` TEXT NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -43,22 +46,22 @@ INSERT INTO `doctor_record` (`id`, `DoctorName`, `Specialization`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `paitient_record`
+-- Table structure for table `patient_record`
 --
 
-CREATE TABLE `paitient_record` (
-  `id` varchar(200) NOT NULL,
-  `PatientName` varchar(200) NOT NULL,
-  `PatientDisease` text NOT NULL,
-  `date` varchar(200) NOT NULL,
-  `time` varchar(200) NOT NULL
+CREATE TABLE `patient_record` (
+  `id` VARCHAR(200) NOT NULL,
+  `PatientName` VARCHAR(200) NOT NULL,
+  `PatientDisease` TEXT NOT NULL,
+  `date` VARCHAR(200) NOT NULL,
+  `time` VARCHAR(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `paitient_record`
+-- Dumping data for table `patient_record`
 --
 
-INSERT INTO `paitient_record` (`id`, `PatientName`, `PatientDisease`, `date`, `time`) VALUES
+INSERT INTO `patient_record` (`id`, `PatientName`, `PatientDisease`, `date`, `time`) VALUES
 ('2', 'taha', '', '22-10-2020', '00:41:19:AM'),
 ('3', 'tom', 'typhoid', '22-10-2020', '');
 
@@ -69,9 +72,9 @@ INSERT INTO `paitient_record` (`id`, `PatientName`, `PatientDisease`, `date`, `t
 --
 
 CREATE TABLE `user_login` (
-  `id` int(200) NOT NULL,
-  `username` varchar(200) NOT NULL,
-  `password` varchar(200) NOT NULL
+  `id` INT(200) NOT NULL,
+  `username` VARCHAR(200) NOT NULL,
+  `password` VARCHAR(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -92,9 +95,9 @@ ALTER TABLE `doctor_record`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `paitient_record`
+-- Indexes for table `patient_record`
 --
-ALTER TABLE `paitient_record`
+ALTER TABLE `patient_record`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -111,7 +114,7 @@ ALTER TABLE `user_login`
 -- AUTO_INCREMENT for table `user_login`
 --
 ALTER TABLE `user_login`
-  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` INT(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

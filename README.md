@@ -1,60 +1,61 @@
-# 🏥 Hospital Management System (HMS)
+# Hospital Management System
 
-A **Java Swing-based desktop application** to manage hospital operations including patient records, doctor management, and admin functionalities — powered by MySQL.
-
----
-
-## ✨ Features
-
-- 🔐 **Admin Login System**
-- 👨‍⚕️ **Doctor Management**
-- 🧑‍🤝‍🧑 **Patient Management**
-- 🗃️ **Secure MySQL Database Integration**
-- 🖥️ **User-friendly GUI with Java Swing**
+A simple hospital management system built with Java Swing and MySQL.
 
 ---
 
-## 🛠️ Technologies Used
+## 🚀 Features
 
-| Tech      | Description |
-|-----      |-------------|
-| ☕ Java  | Core application logic & Swing-based GUI |
-| 🗃️ MySQL | Relational database to store hospital data |
-| 🔌 JDBC  | Java Database Connectivity API |
+- **Login:** Secure login for authorized users.
+- **Doctor Records:**
+  - Add new doctors
+  - View all doctors
+  - Edit doctor information
+  - Delete doctors
+- **Patient Records:**
+  - Admit new patients
+  - View all patients
+  - Edit patient information
+  - Discharge patients
+- **User-Friendly Interface:** All forms are centered and have a clean layout.
+- **Database Integration:** Uses MySQL to store and retrieve data.
 
 ---
 
-## 🚀 How to Run
+## 🛠️ How to Run
 
-1. 🧱 **Set up the database**  
-   Import the `hms.sql` file into your MySQL server.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/weedu230/Hospital-Management-System
+    ```
 
-2. 🛡️ **Update DB credentials**  
-   Go to the DB connection class and change the username/password as per your setup.
+2.  **Set up the database:**
+    - Make sure you have MySQL installed and running.
+    - Create a new database named `hms`.
+    - Import the `Database File/hms.sql` file to create the necessary tables.
 
-3. ▶️ **Launch the app**  
-   Open the project in NetBeans (or any Java IDE) and run `LoginPage.java`.
+3.  **Configure the database connection:**
+    - Open the `DBConnection.java` file and update the following line with your MySQL username and password:
+      ```java
+      return DriverManager.getConnection("jdbc:mysql://localhost:3306/hms", "root", "");
+      ```
+
+4.  **Run the application:**
+    - Compile and run the `LoginPage.java` file to start the application.
 
 ---
 
 ## 🔑 Default Login
 
-| Role | Username | Password |
-|------|----------|----------|
-| Admin | `admin` | `admin` |
-
----
-
-
-
-
-
+| Role    | Username | Password |
+| ------- | -------- | -------- |
+| Admin   | `admin`  | `admin`  |
 
 ---
 
 ## 📌 Note
 
-> Make sure your MySQL server is running before launching the app.  
+> Make sure your MySQL server is running before launching the app.
 > Tested on Java 8+ and MySQL 5.7+.
 
 ---
@@ -67,11 +68,5 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## 🧙‍♂️ Author
 
-Made with ☕ and 💻 by **[weedu230](https://github.com/weedu230)**  
+Made with ☕ and 💻 by **[weedu230](https.github.com/weedu230)**  
 _Student of Bahria University Karachi_
-
----
-
-
-
-
