@@ -45,6 +45,23 @@ A simple hospital management system built with Java Swing and MySQL.
 
 ---
 
+## 📖 Usage
+
+- **Login:** Use the default username and password (`admin`/`admin`) to log in.
+- **Welcome Screen:** After logging in, you will be taken to the welcome screen, where you can choose to manage doctor or patient records.
+- **Doctor Records:**
+  - **View Doctors:** See a list of all doctors in the database.
+  - **Add Doctor:** Add a new doctor by providing their name and specialization.
+  - **Edit Doctor:** Update the information of an existing doctor.
+  - **Fire Doctor:** Remove a doctor from the database.
+- **Patient Records:**
+  - **View Patients:** See a list of all patients in the database.
+  - **Admit Patient:** Add a new patient and record their details.
+  - **Edit Patient:** Update the information of an existing patient.
+  - **Discharge Patient:** Remove a patient from the database.
+
+---
+
 ## 🔑 Default Login
 
 | Role    | Username | Password |
